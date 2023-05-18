@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script src="assets/js/swapContent.js"></script>
   {% include head.html %}
   <body>
     <main>
+      <script src="assets/js/swapContent.js"></script>
       {% include header.html %} {% include bio.html %}
+      <div class="blog-links">
+        <a id="post-link" class="link" href='#' onclick="setContent(true)">Posts</a>
+        <a id="project-link" class="link" href='#' onclick="setContent(false)">Projects</a>
+      </div>
       <section class="articles">
+        <h1 class="articles-title">Posts</h1>
         {% for post in site.posts %}
         <article class="article">
           <h2 class="article-title">
@@ -35,7 +40,6 @@
           }
         });
       }
-      setContent(true);
     </script>
   </body>
 </html>

@@ -1,7 +1,10 @@
 ---
 ---
+
 // Hacky solution, will fix later ~ hrs
-const postContent = `{% for post in site.posts %}
+const postContent = `
+        <h1 class="articles-title">Post</h1>
+        {% for post in site.posts %}
         <article class="article">
           <h2 class="article-title">
             <a href="{{site.baseurl}}{{post.url}}"> {{post.title}} </a>
@@ -17,7 +20,9 @@ const postContent = `{% for post in site.posts %}
         </article>
         {%endfor%}`;
 
-const projectContent = `{% for project in site.projects %}
+const projectContent = `
+        <h1 class="articles-title">Projects</h1>
+        {% for project in site.projects %}
         <article class="article">
           <h2 class="article-title">
             <a href="{{site.baseurl}}{{project.url}}"> {{project.title}} </a>

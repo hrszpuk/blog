@@ -81,12 +81,29 @@ main {
   transform: scale(1.2);
 }
 
+.link {
+  color: cyan;
+  border-bottom: 1px solid cyan;
+  margin: auto;
+}
+
+.blog-links {
+  padding-top: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+
 /* article section */
 
 .articles {
   display: grid;
   row-gap: 2rem;
-  margin: 4rem 0 3rem 0;
+  margin: 2rem 0 3rem 0;
+}
+
+.articles-title {
+  margin: auto;
 }
 .articles .article {
   padding: 2rem;
