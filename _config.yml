@@ -1,10 +1,10 @@
-title: Jekyll Serial Programmer
+title: Remy's coding corner
 markdown: kramdown
 
 # for atom feed
 author:
-  name: Sharad Raj Singh Maurya
-  email: dev_sharad@outlook.com
+  name: Harry Szpuk
+  email: harryszpuk@outlook.com
 
 plugins:
   - jemoji
