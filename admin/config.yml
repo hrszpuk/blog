@@ -4,8 +4,8 @@ backend:
 media_folder: "images/uploads"
 public_folder: "images/uploads"
 collections:
-  - name: "blog"
-    label: "Blog"
+  - name: "post"
+    label: "Blog post"
     folder: "all_collections/_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -13,5 +13,18 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Categories", name: "categories", widget: "list", default: "fields"}
+      - { label: "Tags", name: "tags", widget: "select", options: ["Opinion", "Programming", "Maths", "Guide"], multiple: true}
+      - { label: "Author(s)", name: "authors", widget: "string"}
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "project"
+    label: "Project post"
+    folder: "all_collections/_projects"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "projects" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Brief Description", name: "brief-description", widget: "string"}
+      - { label: "Author(s)", name: "authors", widget: "string"}
       - { label: "Body", name: "body", widget: "markdown" }

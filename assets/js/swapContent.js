@@ -28,6 +28,7 @@ const projectContent = `
             <a href="{{site.baseurl}}{{project.url}}"> {{project.title}} </a>
           </h2>
           <small class="date">{{project.date | date_to_string}}</small>
+          <div class="content">{{project.brief-description}}</div>
           <div class="categories">
             {% for c in project.categories %}
             <a href="#!" data-base-url="{{site.baseurl}}" class="category"
