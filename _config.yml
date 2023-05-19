@@ -29,6 +29,6 @@ defaults:
       path: "_projects"
     values:
       layout: "project"
-      permalink: /projects/:title
+      permalink: /projects/:title/
 
 exclude: ["sitemap.xml", "feed.xml", "LICENSE", "README.md"]
